@@ -1,2 +1,2 @@
-export { useExternalStateValue } from "./ExternalState";
-export { useExternalAction } from "./ExternalAction";
+export { useExternalStateValue } from "./external-state";
+export { useExternalAction } from "./external-action";

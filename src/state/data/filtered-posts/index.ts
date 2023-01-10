@@ -1,9 +1,9 @@
-import { postAtom } from "@/state/Posts";
+import { postAtom } from "@/state/data/posts";
 import { Post } from "@/types";
 import { atom, useRecoilValue } from "recoil";
 
 export const filteredPostsAtom = atom<Post[]>({
-  key: "postAtom",
+  key: "filteredPostsAtom",
   default: postAtom,
 });
 

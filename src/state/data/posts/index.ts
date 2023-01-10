@@ -1,4 +1,4 @@
-import { getPosts } from "@/services";
+import { getPosts } from "@/service";
 import { Post } from "@/types";
 import { atom, selector } from "recoil";
 
