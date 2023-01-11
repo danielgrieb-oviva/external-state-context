@@ -2,11 +2,11 @@ import { FC, useContext } from "react";
 import {
   ExternalState,
   ExternalStateContext,
-  ExternalStateKey,
+  ExternalDataKey,
 } from "./index.types";
 
 export type UseExternalStateArgs = {
-  externalStateKeys: ExternalStateKey[];
+  externalStateKeys: ExternalDataKey[];
   externalState: ExternalState | null;
 };
 
@@ -24,7 +24,7 @@ export const useExternalState = ({
 };
 
 export type withExternalStateArgs<T> = {
-  externalStateKeys: ExternalStateKey[];
+  externalStateKeys: ExternalDataKey[];
   externalStateContext: ExternalStateContext;
   Component: FC<T>;
 };
@@ -45,3 +45,5 @@ export const withExternalState = <T,>({
 
   return WithExternalState;
 };
+
+export * from "@/architecture/index.types";
